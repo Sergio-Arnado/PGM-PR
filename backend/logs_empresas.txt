@@ -1,0 +1,5 @@
+[2025-04-15 00:13:03] Empresa creada: Minera Quilpué (77.543.876-0)
+[2025-04-15 00:14:56] Empresa creada: Clinica Los Carreras (77.622.001.4)
+[2025-04-15 00:15:55] Empresa creada: Inmobiliaria Los Pinos (75.000.345-2)
+[2025-04-15 01:23:45] ERROR: No se pudo conectar a la base de datos al crear la empresa "Constructora Sur Limitada"
+[2025-04-15 01:24:30] ADVERTENCIA: La empresa "Servicios Industriales" ya estaba registrada con el mismo RUT
