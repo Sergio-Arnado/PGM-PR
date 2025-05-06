@@ -1,0 +1,99 @@
+.sidebar-admin {
+  width: 250px;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 👈 ya no usamos space-between */
+  height: 100vh;
+}
+
+.menu-admin {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  flex-grow: 1;
+}
+
+.menu-item-admin {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* 👈 Suaviza todos los cambios (fondo, padding) */
+}
+
+/* ✨ Efecto hover: cambia fondo y se desliza un poco a la derecha */
+.menu-item-admin:hover {
+  background-color: #333;      /* fondo más oscuro */
+  padding-left: 1.5rem;        /* se desliza a la derecha */
+}
+
+.logout-button-admin {
+  background-color: #f1a300;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 90%;
+  align-self: center; /* 👈 Centramos horizontalmente */
+  margin-top: auto; /* ⬅ Esto lo empuja al fondo del contenedor natural, pero no al borde inferior */
+  margin-bottom: 2rem; /* ⬅ Espacio desde el fondo para que no quede pegado */
+  /* ✨ Animación suave */
+  transition: all 0.3s ease;
+}
+
+/* 👆 Efecto al pasar el mouse: cambia color y se agranda levemente */
+.logout-button-admin:hover {
+  background-color: #e48c00; /* color más intenso */
+  transform: scale(1.05);    /* efecto "pop" */
+}
+
+.main-admin {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.menu-container-admin {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start; /* Antes: space-between */
+  height: 100%;
+}
+
+.panel-admin {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* 🟢 Botón para cambiar empresa (nuevo estilo similar al de logout) */
+.switch-empresa-button {
+  background-color: #28a745; /* Verde estilo éxito */
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 90%;
+  align-self: center;
+  margin-top: 1rem; /* Espacio superior para separar del anterior */
+  margin-bottom: 0.5rem; /* separa del botón cerrar sesión */
+  /* ✨ Animación suave */
+  transition: all 0.3s ease;
+}
+
+/* 🟢 Efecto hover: verde más intenso y pop */
+.switch-empresa-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}

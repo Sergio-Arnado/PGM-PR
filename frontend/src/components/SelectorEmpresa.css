@@ -1,0 +1,137 @@
+/* Fondo general con bordes tipo seguridad */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f1c40f, #1a1a00);
+}
+
+/* Envoltorio centrado */
+.selector-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Caja principal blanca con sombras */
+.selector-container-v2 {
+  background-color: #f2f4f8;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Título principal */
+.selector-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Botones verticales principales */
+.selector-buttons-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.selector-buttons-v2 button {
+  width: 220px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #4d6fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.selector-buttons-v2 button:hover {
+  transform: scale(1.03);
+  background-color: #3c55cc;
+}
+
+.selector-buttons-v2 button.select-btn {
+  background-color: #333;
+  cursor: default;
+}
+
+/* Área donde se carga AgregarEmpresa */
+.form-container {
+  margin-top: 2rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Tarjetas visuales */
+.tarjetas-empresa {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  width: 240px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta h4 {
+  margin: 0 0 0.4rem;
+  font-weight: bold;
+}
+
+.tarjeta p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Botón cerrar sesión abajo */
+.cerrar-sesion-bajo {
+  display: block;
+  margin: 3rem auto 0 auto;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion-bajo:hover {
+  background-color: #e63939;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
